@@ -1100,11 +1100,13 @@ function renderTips() {
       }
     }
 
-    // Build image thumbnail
+    // Build image thumbnail (fallback to category SVG on load error)
     const imgSrc = tip.image || TIP_IMAGES[tip.category];
+    const fallbackSrc = TIP_IMAGES[tip.category] || "";
     const imageHTML = imgSrc
       ? `<div class="tip-image-wrap" data-img="${imgSrc}" data-title="${escapeHTML(tip.title)}">
-          <img src="${imgSrc}" alt="${escapeHTML(tip.title)}" class="tip-image" loading="lazy" decoding="async">
+          <img src="${imgSrc}" alt="${escapeHTML(tip.title)}" class="tip-image" loading="lazy" decoding="async"
+               onerror="this.onerror=null;this.src='${fallbackSrc}';this.closest('.tip-image-wrap').dataset.img='${fallbackSrc}';">
           <div class="tip-image-zoom"><i class="ri-zoom-in-line"></i></div>
         </div>`
       : "";
