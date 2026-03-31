@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>광동제약 AI센터 — 업무 생산성 핸즈온 가이드</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Mobile sidebar overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="ri-capsule-fill"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">광동제약 AI센터</span>
+          <span class="logo-subtitle">업무 생산성 핸즈온 가이드</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-search">
+      <div class="search-box">
+        <i class="ri-search-line"></i>
+        <input type="text" id="searchInput" placeholder="팁 검색..." autocomplete="off">
+        <kbd class="search-kbd">/</kbd>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <span class="nav-section-title">Google Workspace</span>
+        <a href="#" class="nav-item active" data-category="all">
+          <i class="ri-apps-line"></i>
+          <span>전체 보기</span>
+          <span class="nav-count" id="countAll"></span>
+        </a>
+        <a href="#" class="nav-item" data-category="gmail">
+          <i class="ri-mail-line"></i>
+          <span>Gmail</span>
+          <span class="nav-count" id="countGmail"></span>
+        </a>
+        <a href="#" class="nav-item" data-category="drive">
+          <i class="ri-drive-line"></i>
+          <span>Google Drive</span>
+          <span class="nav-count" id="countDrive"></span>
+        </a>
+        <a href="#" class="nav-item" data-category="docs">
+          <i class="ri-file-text-line"></i>
+          <span>Docs / Sheets</span>
+          <span class="nav-count" id="countDocs"></span>
+        </a>
+        <a href="#" class="nav-item" data-category="calendar">
+          <i class="ri-calendar-line"></i>
+          <span>Google Calendar</span>
+          <span class="nav-count" id="countCalendar"></span>
+        </a>
+        <a href="#" class="nav-item" data-category="meet">
+          <i class="ri-vidicon-line"></i>
+          <span>Google Meet</span>
+          <span class="nav-count" id="countMeet"></span>
+        </a>
+      </div>
+      <div class="nav-section">
+        <span class="nav-section-title">협업 도구</span>
+        <a href="#" class="nav-item" data-category="slack">
+          <i class="ri-slack-line"></i>
+          <span>Slack</span>
+          <span class="nav-count" id="countSlack"></span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <button class="theme-toggle" id="themeToggle" aria-label="다크 모드 전환">
+        <i class="ri-moon-line" id="themeIcon"></i>
+        <span id="themeLabel">다크 모드</span>
+      </button>
+      <div class="footer-meta">마지막 업데이트: 2026.03</div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main" id="main">
+    <!-- Mobile header -->
+    <header class="mobile-header">
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기">
+        <i class="ri-menu-line"></i>
+      </button>
+      <span class="mobile-title">광동제약 AI센터</span>
+      <button class="theme-toggle-mobile" id="themeToggleMobile" aria-label="다크 모드 전환">
+        <i class="ri-moon-line" id="themeIconMobile"></i>
+      </button>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="ri-lightbulb-flash-line"></i>
+          <span>핸즈온 가이드 v2.0</span>
+        </div>
+        <h1 class="hero-title">
+          업무 생산성을<br>
+          <span class="hero-accent">한 단계 끌어올리세요</span>
+        </h1>
+        <p class="hero-desc">
+          Google Workspace와 Slack을 200% 활용하는 실무 꿀팁 모음.<br>
+          단축키부터 자동화까지, 지금 바로 적용해 보세요.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" id="statTotal">0</span>
+            <span class="stat-label">총 팁 개수</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">6</span>
+            <span class="stat-label">카테고리</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" id="statShortcuts">0</span>
+            <span class="stat-label">단축키 팁</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-pattern"></div>
+    </section>
+
+    <!-- Category Title -->
+    <div class="content-header">
+      <h2 class="content-title" id="contentTitle">
+        <i class="ri-apps-line"></i>
+        <span>전체 보기</span>
+      </h2>
+      <span class="content-count" id="contentCount"></span>
+    </div>
+
+    <!-- Mobile search (shown above grid on mobile) -->
+    <div class="mobile-search">
+      <div class="search-box">
+        <i class="ri-search-line"></i>
+        <input type="text" id="searchInputMobile" placeholder="팁 검색..." autocomplete="off">
+      </div>
+    </div>
+
+    <!-- Tips Grid -->
+    <div class="tips-grid" id="tipsGrid"></div>
+
+    <!-- Empty state -->
+    <div class="empty-state" id="emptyState" style="display:none">
+      <i class="ri-search-eye-line"></i>
+      <h3>검색 결과가 없습니다</h3>
+      <p>다른 키워드로 검색해 보세요</p>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2026 광동제약 AI센터. 내부 교육용 자료입니다.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

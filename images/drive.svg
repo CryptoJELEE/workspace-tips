@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" rx="12" fill="#f8f9fa"/>
+  <!-- Drive header -->
+  <rect y="0" width="800" height="56" rx="12" fill="#fff"/>
+  <rect y="12" width="800" height="44" fill="#fff"/>
+  <path d="M20 18 L32 38 L44 18 Z" fill="#4285f4"/>
+  <path d="M20 18 L32 38 L26 38 L14 18 Z" fill="#0f9d58"/>
+  <path d="M32 38 L44 18 L50 28 L38 48 Z" fill="#ffcd40"/>
+  <text x="56" y="34" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#5f6368">Drive</text>
+  <!-- Search bar -->
+  <rect x="160" y="12" width="480" height="32" rx="8" fill="#f1f3f4"/>
+  <text x="180" y="33" font-family="system-ui,sans-serif" font-size="13" fill="#5f6368">드라이브에서 검색</text>
+  <!-- Sidebar -->
+  <rect x="0" y="56" width="200" height="444" fill="#fff"/>
+  <rect x="12" y="68" width="176" height="36" rx="18" fill="#fff" stroke="#747775" stroke-width="1"/>
+  <text x="44" y="91" font-family="system-ui,sans-serif" font-size="13" font-weight="500" fill="#1a73e8">+ 새로 만들기</text>
+  <text x="20" y="130" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#1a73e8">내 드라이브</text>
+  <text x="20" y="158" font-family="system-ui,sans-serif" font-size="13" fill="#5f6368">공유 드라이브</text>
+  <text x="20" y="186" font-family="system-ui,sans-serif" font-size="13" fill="#5f6368">컴퓨터</text>
+  <text x="20" y="214" font-family="system-ui,sans-serif" font-size="13" fill="#5f6368">공유 문서함</text>
+  <text x="20" y="242" font-family="system-ui,sans-serif" font-size="13" fill="#5f6368">최근 문서함</text>
+  <!-- File grid -->
+  <rect x="200" y="56" width="600" height="444" fill="#fff"/>
+  <line x1="200" y1="56" x2="200" y2="500" stroke="#e0e0e0" stroke-width="1"/>
+  <!-- Folder row -->
+  <text x="220" y="84" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#202124">폴더</text>
+  <!-- Folders -->
+  <rect x="220" y="96" width="170" height="48" rx="8" fill="#fff" stroke="#e0e0e0"/>
+  <rect x="232" y="108" width="24" height="20" rx="3" fill="#5f6368" opacity="0.15"/>
+  <path d="M236 112h6l2-2h8l0 14h-16z" fill="#5f6368" opacity="0.5"/>
+  <text x="264" y="124" font-family="system-ui,sans-serif" font-size="12" fill="#3c4043">프로젝트 자료</text>
+
+  <rect x="400" y="96" width="170" height="48" rx="8" fill="#fff" stroke="#e0e0e0"/>
+  <rect x="412" y="108" width="24" height="20" rx="3" fill="#0f9d58" opacity="0.15"/>
+  <path d="M416 112h6l2-2h8l0 14h-16z" fill="#0f9d58" opacity="0.5"/>
+  <text x="444" y="124" font-family="system-ui,sans-serif" font-size="12" fill="#3c4043">공유 문서</text>
+
+  <rect x="580" y="96" width="170" height="48" rx="8" fill="#fff" stroke="#e0e0e0"/>
+  <rect x="592" y="108" width="24" height="20" rx="3" fill="#4285f4" opacity="0.15"/>
+  <path d="M596 112h6l2-2h8l0 14h-16z" fill="#4285f4" opacity="0.5"/>
+  <text x="624" y="124" font-family="system-ui,sans-serif" font-size="12" fill="#3c4043">회의록</text>
+  <!-- Files section -->
+  <text x="220" y="178" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#202124">파일</text>
+  <!-- File list -->
+  <rect x="220" y="190" width="540" height="40" rx="4" fill="transparent"/>
+  <rect x="228" y="198" width="24" height="24" rx="3" fill="#4285f4" opacity="0.15"/>
+  <text x="228" y="216" font-family="system-ui,sans-serif" font-size="14" fill="#4285f4" font-weight="700">D</text>
+  <text x="264" y="214" font-family="system-ui,sans-serif" font-size="13" fill="#3c4043">주간보고서_2026_03.docx</text>
+  <text x="720" y="214" font-family="system-ui,sans-serif" font-size="11" fill="#5f6368" text-anchor="end">나</text>
+
+  <rect x="220" y="234" width="540" height="40" rx="4" fill="transparent"/>
+  <rect x="228" y="242" width="24" height="24" rx="3" fill="#0f9d58" opacity="0.15"/>
+  <text x="230" y="260" font-family="system-ui,sans-serif" font-size="14" fill="#0f9d58" font-weight="700">S</text>
+  <text x="264" y="258" font-family="system-ui,sans-serif" font-size="13" fill="#3c4043">실적_데이터_Q1.xlsx</text>
+  <text x="720" y="258" font-family="system-ui,sans-serif" font-size="11" fill="#5f6368" text-anchor="end">나</text>
+
+  <rect x="220" y="278" width="540" height="40" rx="4" fill="transparent"/>
+  <rect x="228" y="286" width="24" height="24" rx="3" fill="#ea4335" opacity="0.15"/>
+  <text x="230" y="304" font-family="system-ui,sans-serif" font-size="14" fill="#ea4335" font-weight="700">P</text>
+  <text x="264" y="302" font-family="system-ui,sans-serif" font-size="13" fill="#3c4043">발표자료_최종.pptx</text>
+  <text x="720" y="302" font-family="system-ui,sans-serif" font-size="11" fill="#5f6368" text-anchor="end">김민수</text>
+</svg>
