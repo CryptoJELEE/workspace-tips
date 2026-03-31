@@ -501,6 +501,7 @@ const TIPS = [
     shortcut: "슬라이드 > 테마 편집",
     image: "images/docs.svg",
     scenario: "발표 자료 40장을 만들었는데 로고 위치가 슬라이드마다 다르고 폰트도 제각각입니다. 마스터 슬라이드에서 로고 위치와 폰트를 한 번만 설정하면 전체 슬라이드에 자동 적용되어 수작업 교정이 필요 없습니다.",
+    deptTags: ["마케팅팀", "기획팀", "디자인팀"],
   },
   {
     category: "docs",
@@ -511,6 +512,7 @@ const TIPS = [
     shortcut: "Ctrl/Cmd + Shift + Enter (발표자 보기)",
     image: "images/docs.svg",
     scenario: "임원 발표 중에 다음 슬라이드 내용이 기억나지 않아 당황한 적이 있습니다. 발표자 보기를 켜면 청중 화면에는 현재 슬라이드만 보이고, 내 화면에는 발표 노트와 다음 슬라이드가 함께 나와서 자연스럽게 진행할 수 있습니다.",
+    deptTags: ["기획팀", "영업팀", "마케팅팀"],
   },
   {
     category: "docs",
@@ -521,6 +523,7 @@ const TIPS = [
     shortcut: "삽입 > 동영상",
     image: "images/docs.svg",
     scenario: "신제품 발표에서 3분짜리 데모 영상을 보여줘야 합니다. 삽입 > 동영상에서 Drive에 올린 영상을 넣고 시작 시간을 0:30, 종료를 2:15로 설정하면, 핵심 장면만 자동 재생되어 발표 흐름이 끊기지 않습니다.",
+    deptTags: ["마케팅팀", "영업팀"],
   },
   {
     category: "docs",
@@ -530,6 +533,7 @@ const TIPS = [
     context: "대규모 발표에서 질문을 효율적으로 관리하고 싶을 때",
     shortcut: "발표 중 > 도구 > Q&A 기록",
     image: "images/docs.svg",
+    deptTags: ["기획팀", "마케팅팀", "AI센터"],
   },
 
   // ─── 공동 작업 & 버전 관리 심화 ───
@@ -542,6 +546,7 @@ const TIPS = [
     shortcut: "제목 스타일로 섹션 구분 + 댓글로 작업 영역 공유",
     image: "images/docs.svg",
     scenario: "기획안을 3명이 동시에 쓰는데 서로의 문장이 뒤섞입니다. 제목1로 섹션을 나눠 '1. 배경: 김대리 / 2. 목적: 박과장 / 3. 일정: 이사원'처럼 분담하면 커서 충돌 없이 빠르게 완성됩니다.",
+    deptTags: ["기획팀", "마케팅팀", "총무팀"],
   },
   {
     category: "docs",
@@ -552,6 +557,7 @@ const TIPS = [
     shortcut: "Ctrl/Cmd + Alt + M (댓글 삽입) → @이름 → 할당 체크",
     image: "images/docs.svg",
     scenario: "보고서 초안에서 재무 데이터가 빈 칸입니다. 해당 셀에 댓글을 달고 '@재무팀 김대리 이 수치 채워주세요'라고 할당하면, 김대리 메일에 알림이 가고 완료 시 체크 표시가 됩니다.",
+    deptTags: ["기획팀", "마케팅팀", "총무팀"],
   },
   {
     category: "docs",
@@ -562,6 +568,7 @@ const TIPS = [
     shortcut: "파일 > 버전 기록 > 현재 버전 이름 지정",
     image: "images/docs.svg",
     scenario: "계약서가 5차 수정까지 갔는데 법무팀에서 '3차 수정본으로 돌려달라'고 합니다. 버전에 이름을 붙여뒀다면 'v3 법무검토완료'를 클릭해서 바로 복원할 수 있습니다.",
+    deptTags: ["기획팀", "전략기획팀", "총무팀"],
   },
   {
     category: "docs",
@@ -572,6 +579,7 @@ const TIPS = [
     shortcut: "파일 > 사본 만들기",
     image: "images/docs.svg",
     scenario: "마케팅 기획안에서 A안(보수적)과 B안(공격적)을 동시에 발전시키고 싶습니다. 원본에서 사본을 만들어 각각 독립적으로 발전시킨 후, 회의에서 나란히 비교하면 됩니다.",
+    deptTags: ["기획팀", "마케팅팀"],
   },
   {
     category: "docs",
@@ -582,6 +590,7 @@ const TIPS = [
     shortcut: "도구 > 알림 규칙",
     image: "images/docs.svg",
     scenario: "허가 신청서를 부서 간 공동 작업 중인데, 누가 언제 수정했는지 놓치면 안 됩니다. 알림 규칙을 '변경사항이 있을 때 즉시'로 설정하면 편집이 일어날 때마다 메일이 옵니다.",
+    deptTags: ["기획팀", "총무팀", "IT운영팀"],
   },
   {
     category: "drive",
@@ -592,6 +601,7 @@ const TIPS = [
     shortcut: "파일 우클릭 > 버전 관리 > 새 버전 업로드",
     image: "images/drive.svg",
     scenario: "외부 업체가 보내준 Excel 견적서가 3차까지 왔는데, 이전 버전과 비교하고 싶습니다. 매번 같은 Drive 파일에 '새 버전 업로드'를 했다면 버전 관리 창에서 1차, 2차, 3차를 모두 다운받아 비교할 수 있습니다.",
+    deptTags: ["총무팀", "영업팀", "기획팀"],
   },
   {
     category: "drive",
@@ -602,9 +612,10 @@ const TIPS = [
     shortcut: "Drive 좌측 > 공유 드라이브 > 새로 만들기",
     image: "images/drive.svg",
     scenario: "핵심 프로젝트 자료가 퇴사한 직원의 개인 Drive에 있어서 접근이 안 됩니다. 공유 드라이브를 사용했다면 소유권이 팀에 있으므로 이런 문제가 생기지 않습니다.",
+    deptTags: ["총무팀", "IT운영팀", "기획팀"],
   },
   {
-    category: "sheets",
+    category: "docs",
     level: "공동 작업",
     title: "보호된 시트/범위로 실수 편집 방지하기",
     desc: "Sheets에서 데이터 > 보호된 시트 및 범위를 설정하면 특정 셀이나 시트를 지정된 사용자만 편집할 수 있게 잠글 수 있습니다. 수식이 들어간 요약 행이나 마스터 데이터를 보호하면 실수로 덮어쓰는 사고를 방지합니다.",
@@ -612,9 +623,10 @@ const TIPS = [
     shortcut: "데이터 > 보호된 시트 및 범위",
     image: "images/docs.svg",
     scenario: "월간 매출 시트에서 요약 수식이 있는 행을 누군가 실수로 지워서 전체 수치가 깨졌습니다. 해당 행을 보호 범위로 설정하면 관리자만 편집 가능하고, 다른 팀원은 데이터 입력 영역만 수정할 수 있습니다.",
+    deptTags: ["전략기획팀", "영업팀", "IT운영팀"],
   },
   {
-    category: "sheets",
+    category: "docs",
     level: "공동 작업",
     title: "필터 보기(Filter View)로 다른 사람 화면 방해 없이 필터링하기",
     desc: "일반 필터를 적용하면 같은 시트를 보는 모든 사람의 화면이 바뀝니다. 대신 데이터 > 필터 보기 > 새 필터 보기를 사용하면 나만의 필터가 적용되어 다른 사용자에게 영향을 주지 않습니다. 필터 보기에 이름을 붙여 저장할 수도 있습니다.",
@@ -622,6 +634,7 @@ const TIPS = [
     shortcut: "데이터 > 필터 보기 > 새 필터 보기 만들기",
     image: "images/docs.svg",
     scenario: "전사 매출 시트에서 내 부서 데이터만 보려고 필터를 걸었더니 다른 팀에서 '시트가 이상해졌다'고 연락이 옵니다. 필터 보기를 사용하면 나만 필터가 적용되고, 다른 사람은 전체 데이터를 그대로 봅니다.",
+    deptTags: ["영업팀", "전략기획팀", "기획팀"],
   },
 
   // ─── Google Calendar ───
@@ -633,6 +646,7 @@ const TIPS = [
     context: "회의 때문에 몰입 시간이 계속 깨질 때",
     shortcut: "c > 집중 시간 선택",
     image: "images/calendar.svg",
+    deptTags: ["기획팀", "AI센터", "IT운영팀"],
   },
   {
     category: "calendar",
@@ -642,6 +656,7 @@ const TIPS = [
     context: "마우스 클릭 없이 빠르게 일정을 추가하고 싶을 때",
     shortcut: "c (새 일정) / q (빠른 추가)",
     image: "images/calendar.svg",
+    deptTags: ["기획팀", "영업팀", "총무팀"],
   },
   {
     category: "calendar",
@@ -651,6 +666,7 @@ const TIPS = [
     context: "팀 가용 시간을 빠르게 확인해야 할 때",
     shortcut: "설정 > 캘린더 추가 > 새 캘린더",
     image: "images/calendar.svg",
+    deptTags: ["총무팀", "기획팀", "영업팀"],
   },
   {
     category: "calendar",
@@ -660,6 +676,7 @@ const TIPS = [
     context: "1:1 미팅 시간을 이메일로 주고받느라 시간 낭비할 때",
     shortcut: "일정 만들기 > 예약 일정",
     image: "images/calendar.svg",
+    deptTags: ["영업팀", "기획팀", "마케팅팀"],
   },
   {
     category: "calendar",
@@ -669,6 +686,7 @@ const TIPS = [
     context: "재택/사무실 혼합 근무로 팀원 위치 파악이 어려울 때",
     shortcut: "설정 > 근무 시간 및 장소",
     image: "images/calendar.svg",
+    deptTags: ["총무팀", "기획팀", "IT운영팀"],
   },
   {
     category: "calendar",
@@ -678,6 +696,7 @@ const TIPS = [
     context: "하루에 일정이 많아 종류별 구분이 어려울 때",
     shortcut: "일정 우클릭 > 색상 선택",
     image: "images/calendar.svg",
+    deptTags: ["기획팀", "영업팀"],
   },
   {
     category: "calendar",
@@ -687,6 +706,7 @@ const TIPS = [
     context: "캘린더에 모든 것을 일정으로만 넣고 있을 때",
     shortcut: "캘린더 > 할 일 / 리마인더 전환",
     image: "images/calendar.svg",
+    deptTags: ["기획팀", "총무팀"],
   },
   {
     category: "calendar",
@@ -696,6 +716,7 @@ const TIPS = [
     context: "휴가 중에도 회의 초대가 계속 올 때",
     shortcut: "일정 만들기 > 부재중",
     image: "images/calendar.svg",
+    deptTags: ["총무팀", "기획팀", "영업팀"],
   },
   {
     category: "calendar",
@@ -705,6 +726,7 @@ const TIPS = [
     context: "회의 후 별도로 회의록을 만드는 게 번거로울 때",
     shortcut: "일정 열기 > 회의 노트 추가",
     image: "images/calendar.svg",
+    deptTags: ["기획팀", "총무팀", "전략기획팀"],
   },
   {
     category: "calendar",
@@ -714,6 +736,7 @@ const TIPS = [
     context: "회의를 자주 놓치거나 준비 시간이 부족할 때",
     shortcut: "설정 > 캘린더 > 기본 알림",
     image: "images/calendar.svg",
+    deptTags: ["영업팀", "기획팀"],
   },
   {
     category: "calendar",
@@ -723,6 +746,7 @@ const TIPS = [
     context: "해외 사무소와 자주 미팅을 잡아야 할 때",
     shortcut: "설정 > 시간대 > 보조 시간대 표시",
     image: "images/calendar.svg",
+    deptTags: ["영업팀", "전략기획팀", "마케팅팀"],
   },
   {
     category: "calendar",
@@ -732,6 +756,7 @@ const TIPS = [
     context: "캘린더를 마우스 없이 빠르게 탐색하고 싶을 때",
     shortcut: "d / w / m / t / j / k",
     image: "images/calendar.svg",
+    deptTags: ["기획팀", "영업팀"],
   },
 
   // ─── Google Meet ───
@@ -743,6 +768,7 @@ const TIPS = [
     context: "중요한 미팅에서 장비 이슈를 줄이고 싶을 때",
     shortcut: "미리보기 화면에서 테스트",
     image: "images/meet.svg",
+    deptTags: ["기획팀", "영업팀", "마케팅팀"],
   },
   {
     category: "meet",
@@ -752,6 +778,7 @@ const TIPS = [
     context: "회의 후 액션 정리가 자주 늦어질 때",
     shortcut: "활동 패널 > 녹화 시작",
     image: "images/meet.svg",
+    deptTags: ["기획팀", "총무팀", "전략기획팀"],
   },
   {
     category: "meet",
@@ -761,6 +788,7 @@ const TIPS = [
     context: "데모나 발표 중 화면 공유가 꼬일 때",
     shortcut: "발표 > 탭 / 전체 화면 / 창 선택",
     image: "images/meet.svg",
+    deptTags: ["IT운영팀", "AI센터", "기획팀"],
   },
   {
     category: "meet",
@@ -770,6 +798,7 @@ const TIPS = [
     context: "참석자가 많은 회의에서 진행이 산만할 때",
     shortcut: "하단 바 > 자막 켜기 / 손들기",
     image: "images/meet.svg",
+    deptTags: ["총무팀", "기획팀", "마케팅팀"],
   },
   {
     category: "meet",
@@ -779,6 +808,7 @@ const TIPS = [
     context: "워크숍이나 교육에서 소그룹 활동이 필요할 때",
     shortcut: "활동 패널 > 소회의실",
     image: "images/meet.svg",
+    deptTags: ["기획팀", "마케팅팀", "AI센터"],
   },
 
   // ─── Slack ───
@@ -790,6 +820,7 @@ const TIPS = [
     context: "채널이 많아 원하는 채널을 찾기 어려울 때",
     shortcut: "Cmd/Ctrl + K (빠른 이동)",
     image: "images/slack.svg",
+    deptTags: ["기획팀", "IT운영팀", "AI센터"],
   },
   {
     category: "slack",
@@ -799,6 +830,7 @@ const TIPS = [
     context: "채널 메시지가 많아 과거 결정을 못 찾을 때",
     shortcut: "Cmd/Ctrl + G → from: / in: / has:",
     image: "images/slack.svg",
+    deptTags: ["기획팀", "영업팀", "IT운영팀"],
   },
   {
     category: "slack",
@@ -808,6 +840,7 @@ const TIPS = [
     context: "반복적인 요청이나 공지를 사람이 계속 처리하고 있을 때",
     shortcut: "도구 > 워크플로우 빌더",
     image: "images/slack.svg",
+    deptTags: ["IT운영팀", "총무팀", "AI센터"],
   },
   {
     category: "slack",
@@ -817,6 +850,7 @@ const TIPS = [
     context: "채팅으로 주고받기엔 복잡한 논의가 있을 때",
     shortcut: "Cmd/Ctrl + Shift + H (허들 시작)",
     image: "images/slack.svg",
+    deptTags: ["기획팀", "IT운영팀", "디자인팀"],
   },
   {
     category: "slack",
@@ -826,6 +860,7 @@ const TIPS = [
     context: "팀 내 반복 질문이 많거나 정보가 흩어져 있을 때",
     shortcut: "채널 > 캔버스 탭 > 새 캔버스",
     image: "images/slack.svg",
+    deptTags: ["IT운영팀", "AI센터", "기획팀"],
   },
   {
     category: "slack",
@@ -835,6 +870,7 @@ const TIPS = [
     context: "채널이 30개 이상이라 사이드바가 복잡할 때",
     shortcut: "사이드바 > 섹션 만들기 / 채널 우클릭 > 음소거",
     image: "images/slack.svg",
+    deptTags: ["기획팀", "총무팀"],
   },
   {
     category: "slack",
@@ -844,6 +880,7 @@ const TIPS = [
     context: "외부 파트너와 이메일 대신 실시간 협업이 필요할 때",
     shortcut: "채널 만들기 > Slack Connect 채널",
     image: "images/slack.svg",
+    deptTags: ["영업팀", "마케팅팀", "기획팀"],
   },
   {
     category: "slack",
@@ -853,6 +890,7 @@ const TIPS = [
     context: "팀원의 현재 상태를 알기 어렵거나 팀 분위기를 활성화하고 싶을 때",
     shortcut: "이모지 > 이모지 추가 / 프로필 > 상태 설정",
     image: "images/slack.svg",
+    deptTags: ["총무팀", "마케팅팀"],
   },
   {
     category: "slack",
@@ -862,6 +900,7 @@ const TIPS = [
     context: "중요한 할 일을 자주 놓치거나 반복 공지가 필요할 때",
     shortcut: "/remind [대상] [시간] [내용]",
     image: "images/slack.svg",
+    deptTags: ["기획팀", "총무팀", "영업팀"],
   },
   {
     category: "slack",
@@ -871,6 +910,7 @@ const TIPS = [
     context: "채널 본문이 잡담과 실무 대화로 뒤섞일 때",
     shortcut: "메시지 > 스레드로 답장",
     image: "images/slack.svg",
+    deptTags: ["기획팀", "IT운영팀", "총무팀"],
   },
   {
     category: "slack",
@@ -880,6 +920,7 @@ const TIPS = [
     context: "과거의 중요 결정이나 링크를 매번 다시 찾아야 할 때",
     shortcut: "메시지 > 더보기 > 핀 / 채널 상단 > 북마크 추가",
     image: "images/slack.svg",
+    deptTags: ["기획팀", "총무팀", "IT운영팀"],
   },
   {
     category: "slack",
@@ -889,6 +930,7 @@ const TIPS = [
     context: "여러 도구를 오가며 확인하는 게 번거로울 때",
     shortcut: "앱 > Google Calendar / Drive 추가",
     image: "images/slack.svg",
+    deptTags: ["기획팀", "IT운영팀", "영업팀"],
   },
   {
     category: "slack",
@@ -898,6 +940,7 @@ const TIPS = [
     context: "길고 복잡한 내용을 읽기 쉽게 전달하고 싶을 때",
     shortcut: "*굵게* / `코드` / ```코드 블록```",
     image: "images/slack.svg",
+    deptTags: ["IT운영팀", "AI센터", "기획팀"],
   },
   {
     category: "slack",
@@ -907,6 +950,7 @@ const TIPS = [
     context: "야근이나 주말에 작성한 메시지를 근무 시간에 보내고 싶을 때",
     shortcut: "전송 버튼 > 예약 전송",
     image: "images/slack.svg",
+    deptTags: ["영업팀", "마케팅팀", "기획팀"],
   },
   {
     category: "slack",
@@ -916,6 +960,7 @@ const TIPS = [
     context: "퇴근 후나 집중 시간에 알림이 계속 올 때",
     shortcut: "Cmd/Ctrl + Shift + D (DND 토글)",
     image: "images/slack.svg",
+    deptTags: ["기획팀", "IT운영팀"],
   },
 ];
 
@@ -923,6 +968,7 @@ const TIPS = [
 // State
 // ============================================
 let activeCategory = "all";
+let activeDept = "all";
 let searchTerm = "";
 
 // ============================================
@@ -1018,10 +1064,13 @@ function updateCounts() {
 function getFilteredTips() {
   const q = searchTerm.trim().toLowerCase();
   return TIPS.filter((tip) => {
-    const catMatch = activeCategory === "all" || tip.category === activeCategory || (activeCategory === "docs" && tip.category === "sheets");
+    const catMatch = activeCategory === "all" || tip.category === activeCategory;
     if (!catMatch) return false;
+    if (activeDept !== "all") {
+      if (!tip.deptTags || !tip.deptTags.includes(activeDept)) return false;
+    }
     if (!q) return true;
-    const haystack = [tip.title, tip.desc, tip.context, tip.shortcut, tip.level, tip.scenario, CATEGORIES[tip.category].name]
+    const haystack = [tip.title, tip.desc, tip.context, tip.shortcut, tip.level, tip.scenario, CATEGORIES[tip.category]?.name]
       .join(" ")
       .toLowerCase();
     return haystack.includes(q);
@@ -1087,10 +1136,19 @@ function renderTips() {
           ${shortcutHTML}
         </div>
       </div>
+      ${tip.deptTags && tip.deptTags.length ? `<div class="tip-dept-tags">${tip.deptTags.map((d) => `<span class="dept-tag" data-dept="${escapeHTML(d)}">${escapeHTML(d)}</span>`).join("")}</div>` : ""}
     `;
 
     dom.tipsGrid.appendChild(card);
   });
+}
+
+function setActiveDept(dept) {
+  activeDept = dept;
+  document.querySelectorAll(".nav-dept-item").forEach((item) => {
+    item.classList.toggle("active", item.dataset.dept === dept);
+  });
+  renderTips();
 }
 
 function setActiveCategory(cat) {
@@ -1176,6 +1234,25 @@ function bindEvents() {
       closeSidebar();
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
+  });
+
+  // Department filter
+  $$(".nav-dept-item").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      setActiveDept(item.dataset.dept);
+      closeSidebar();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+
+  // Dept tag click on cards
+  dom.tipsGrid.addEventListener("click", (e) => {
+    const tag = e.target.closest(".dept-tag");
+    if (tag) {
+      setActiveDept(tag.dataset.dept);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   });
 
   // Search (sidebar)
