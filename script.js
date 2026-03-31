@@ -490,6 +490,98 @@ const TIPS = [
     image: "images/docs.svg",
   },
 
+  // ─── 공동 작업 & 버전 관리 심화 ───
+  {
+    category: "docs",
+    level: "공동 작업",
+    title: "동시 편집 시 커서 충돌 방지 — 섹션 분담 전략",
+    desc: "여러 명이 같은 문서를 동시에 편집할 때는 제목 스타일로 섹션을 나누고, 각자 담당 섹션만 편집하세요. 같은 줄을 동시에 수정하면 의도치 않은 덮어쓰기가 발생할 수 있습니다. 편집 전 댓글로 '이 섹션 작업 중'이라고 남기면 충돌을 줄일 수 있습니다.",
+    context: "3명 이상이 하나의 문서를 동시에 편집해야 할 때",
+    shortcut: "제목 스타일로 섹션 구분 + 댓글로 작업 영역 공유",
+    image: "images/docs.svg",
+    scenario: "기획안을 3명이 동시에 쓰는데 서로의 문장이 뒤섞입니다. 제목1로 섹션을 나눠 '1. 배경: 김대리 / 2. 목적: 박과장 / 3. 일정: 이사원'처럼 분담하면 커서 충돌 없이 빠르게 완성됩니다.",
+  },
+  {
+    category: "docs",
+    level: "공동 작업",
+    title: "@멘션과 할당된 작업으로 문서 내 협업 관리하기",
+    desc: "댓글에서 @이름을 입력하면 해당 사용자에게 이메일 알림이 갑니다. '할당 대상' 체크박스를 켜면 해당 댓글이 할일로 지정되어, 상대방의 할일 목록에 나타납니다. 문서를 떠나지 않고도 업무 지시와 확인이 가능합니다.",
+    context: "문서 안에서 특정 사람에게 수정이나 확인을 요청할 때",
+    shortcut: "Ctrl/Cmd + Alt + M (댓글 삽입) → @이름 → 할당 체크",
+    image: "images/docs.svg",
+    scenario: "보고서 초안에서 재무 데이터가 빈 칸입니다. 해당 셀에 댓글을 달고 '@재무팀 김대리 이 수치 채워주세요'라고 할당하면, 김대리 메일에 알림이 가고 완료 시 체크 표시가 됩니다.",
+  },
+  {
+    category: "docs",
+    level: "버전 관리",
+    title: "버전에 이름 붙이기 — '최종', '검토전', '승인본' 관리법",
+    desc: "파일 > 버전 기록에서 현재 버전에 이름을 붙일 수 있습니다(예: 'v1 초안', 'v2 팀장검토후', 'v3 최종승인'). 이름이 없으면 타임스탬프만 나열되어 어떤 버전이 중요한지 알 수 없습니다. 주요 마일스톤마다 반드시 이름을 붙이세요.",
+    context: "여러 차례 수정을 거친 문서에서 특정 시점으로 돌아가야 할 때",
+    shortcut: "파일 > 버전 기록 > 현재 버전 이름 지정",
+    image: "images/docs.svg",
+    scenario: "계약서가 5차 수정까지 갔는데 법무팀에서 '3차 수정본으로 돌려달라'고 합니다. 버전에 이름을 붙여뒀다면 'v3 법무검토완료'를 클릭해서 바로 복원할 수 있습니다.",
+  },
+  {
+    category: "docs",
+    level: "버전 관리",
+    title: "사본 만들기로 분기점(Branch) 관리하기",
+    desc: "큰 방향 전환이 필요할 때는 '파일 > 사본 만들기'로 현재 문서를 복제하세요. 원본은 보존하고 사본에서 자유롭게 실험할 수 있습니다. 사본 제목에 날짜와 목적을 명시하면(예: '기획안_0331_B안') 나중에 비교가 쉽습니다.",
+    context: "A안/B안처럼 서로 다른 방향의 문서를 동시에 발전시킬 때",
+    shortcut: "파일 > 사본 만들기",
+    image: "images/docs.svg",
+    scenario: "마케팅 기획안에서 A안(보수적)과 B안(공격적)을 동시에 발전시키고 싶습니다. 원본에서 사본을 만들어 각각 독립적으로 발전시킨 후, 회의에서 나란히 비교하면 됩니다.",
+  },
+  {
+    category: "docs",
+    level: "공동 작업",
+    title: "알림 규칙 설정으로 문서 변경 실시간 감지하기",
+    desc: "Docs/Sheets에서 도구 > 알림 규칙을 설정하면 누군가 편집하거나 댓글을 달 때 이메일 알림을 받을 수 있습니다. '변경사항이 있을 때' 또는 '일일 요약'으로 선택 가능합니다. 중요 문서는 실시간 알림을 켜두세요.",
+    context: "중요한 공유 문서가 수정되었는지 바로 알고 싶을 때",
+    shortcut: "도구 > 알림 규칙",
+    image: "images/docs.svg",
+    scenario: "허가 신청서를 부서 간 공동 작업 중인데, 누가 언제 수정했는지 놓치면 안 됩니다. 알림 규칙을 '변경사항이 있을 때 즉시'로 설정하면 편집이 일어날 때마다 메일이 옵니다.",
+  },
+  {
+    category: "drive",
+    level: "버전 관리",
+    title: "Drive에서 비-Google 파일(PDF, Excel 등) 버전 관리하기",
+    desc: "Google Docs/Sheets가 아닌 PDF, Excel, PowerPoint 파일도 Drive에서 '버전 관리'가 됩니다. 파일을 우클릭 > 버전 관리에서 '새 버전 업로드'를 하면 같은 파일명으로 이전 버전이 쌓입니다. 최대 100개 또는 30일간 보관됩니다.",
+    context: "Excel이나 PDF 파일도 버전별로 관리하고 싶을 때",
+    shortcut: "파일 우클릭 > 버전 관리 > 새 버전 업로드",
+    image: "images/drive.svg",
+    scenario: "외부 업체가 보내준 Excel 견적서가 3차까지 왔는데, 이전 버전과 비교하고 싶습니다. 매번 같은 Drive 파일에 '새 버전 업로드'를 했다면 버전 관리 창에서 1차, 2차, 3차를 모두 다운받아 비교할 수 있습니다.",
+  },
+  {
+    category: "drive",
+    level: "공동 작업",
+    title: "공유 드라이브(Shared Drive)로 팀 자산 안전하게 관리하기",
+    desc: "개인 Drive에 파일을 넣고 공유하면 그 사람이 퇴사하면 파일도 사라집니다. 공유 드라이브는 팀 소유이므로 개인 계정과 무관하게 유지됩니다. 프로젝트별 공유 드라이브를 만들고 권한을 체계적으로 관리하세요.",
+    context: "팀 공용 문서를 안전하게 관리하고 싶을 때",
+    shortcut: "Drive 좌측 > 공유 드라이브 > 새로 만들기",
+    image: "images/drive.svg",
+    scenario: "핵심 프로젝트 자료가 퇴사한 직원의 개인 Drive에 있어서 접근이 안 됩니다. 공유 드라이브를 사용했다면 소유권이 팀에 있으므로 이런 문제가 생기지 않습니다.",
+  },
+  {
+    category: "sheets",
+    level: "공동 작업",
+    title: "보호된 시트/범위로 실수 편집 방지하기",
+    desc: "Sheets에서 데이터 > 보호된 시트 및 범위를 설정하면 특정 셀이나 시트를 지정된 사용자만 편집할 수 있게 잠글 수 있습니다. 수식이 들어간 요약 행이나 마스터 데이터를 보호하면 실수로 덮어쓰는 사고를 방지합니다.",
+    context: "여러 사람이 쓰는 시트에서 핵심 데이터를 보호하고 싶을 때",
+    shortcut: "데이터 > 보호된 시트 및 범위",
+    image: "images/docs.svg",
+    scenario: "월간 매출 시트에서 요약 수식이 있는 행을 누군가 실수로 지워서 전체 수치가 깨졌습니다. 해당 행을 보호 범위로 설정하면 관리자만 편집 가능하고, 다른 팀원은 데이터 입력 영역만 수정할 수 있습니다.",
+  },
+  {
+    category: "sheets",
+    level: "공동 작업",
+    title: "필터 보기(Filter View)로 다른 사람 화면 방해 없이 필터링하기",
+    desc: "일반 필터를 적용하면 같은 시트를 보는 모든 사람의 화면이 바뀝니다. 대신 데이터 > 필터 보기 > 새 필터 보기를 사용하면 나만의 필터가 적용되어 다른 사용자에게 영향을 주지 않습니다. 필터 보기에 이름을 붙여 저장할 수도 있습니다.",
+    context: "공유 시트에서 내가 필요한 데이터만 보고 싶을 때",
+    shortcut: "데이터 > 필터 보기 > 새 필터 보기 만들기",
+    image: "images/docs.svg",
+    scenario: "전사 매출 시트에서 내 부서 데이터만 보려고 필터를 걸었더니 다른 팀에서 '시트가 이상해졌다'고 연락이 옵니다. 필터 보기를 사용하면 나만 필터가 적용되고, 다른 사람은 전체 데이터를 그대로 봅니다.",
+  },
+
   // ─── Google Calendar ───
   {
     category: "calendar",
@@ -884,7 +976,7 @@ function updateCounts() {
 function getFilteredTips() {
   const q = searchTerm.trim().toLowerCase();
   return TIPS.filter((tip) => {
-    const catMatch = activeCategory === "all" || tip.category === activeCategory;
+    const catMatch = activeCategory === "all" || tip.category === activeCategory || (activeCategory === "docs" && tip.category === "sheets");
     if (!catMatch) return false;
     if (!q) return true;
     const haystack = [tip.title, tip.desc, tip.context, tip.shortcut, tip.level, tip.scenario, CATEGORIES[tip.category].name]
