@@ -31,7 +31,8 @@ const TIPS = [
     scenario: "월요일 아침 출근하면 주말 동안 쌓인 메일이 80통인데, 임상시험 CRO에서 온 긴급 메일과 사내 공지를 한눈에 구분하고 싶을 때",
     context: "메일이 많아 우선순위를 놓치기 쉬울 때",
     shortcut: "Shift + I (읽음) / Shift + U (안읽음)",
-    image: "images/gmail.svg",
+    image: "images/gmail-labels-screenshot.png",
+    deptTags: ["영업팀", "기획팀", "총무팀"],
   },
   {
     category: "gmail",
@@ -41,7 +42,8 @@ const TIPS = [
     scenario: "SAP 시스템 알림, LIMS 분석결과 통보, 일일 생산 현황 자동 메일이 매일 30통씩 받은편지함을 채울 때",
     context: "반복적으로 들어오는 알림 메일을 줄이고 싶을 때",
     shortcut: "검색창 > 검색 옵션 > 필터 만들기",
-    image: "images/gmail.svg",
+    image: "images/gmail-filters-screenshot.png",
+    deptTags: ["IT운영팀", "총무팀"],
   },
   {
     category: "gmail",
@@ -52,6 +54,7 @@ const TIPS = [
     context: "메일 처리량이 많은 실무자",
     shortcut: "e / r / a / f / # (삭제)",
     image: "images/gmail.svg",
+    deptTags: ["영업팀", "총무팀", "기획팀"],
   },
   {
     category: "gmail",
@@ -61,7 +64,8 @@ const TIPS = [
     scenario: "6개월 전 식약처 담당자가 보낸 허가 관련 첨부파일을 급히 찾아야 하는데, 메일함에 수천 통이 쌓여있을 때",
     context: "지난 보고서나 첨부파일을 다시 찾아야 할 때",
     shortcut: "from:홍길동 has:attachment older_than:6m",
-    image: "images/gmail.svg",
+    image: "images/gmail-search-operators.png",
+    deptTags: ["영업팀", "기획팀", "총무팀"],
   },
   {
     category: "gmail",
@@ -72,6 +76,7 @@ const TIPS = [
     context: "중요한 메일 발송 실수를 줄이고 싶을 때",
     shortcut: "Ctrl/Cmd + Z (발송 직후)",
     image: "images/gmail.svg",
+    deptTags: ["영업팀", "기획팀", "총무팀"],
   },
   {
     category: "gmail",
@@ -82,6 +87,7 @@ const TIPS = [
     context: "비슷한 내용의 메일을 반복해서 작성할 때",
     shortcut: "작성 > 더보기 > 템플릿",
     image: "images/gmail.svg",
+    deptTags: ["영업팀", "총무팀", "마케팅팀"],
   },
 
   // ─── Google Drive ───
@@ -93,7 +99,8 @@ const TIPS = [
     scenario: "신제품 출시 기획안을 마케팅팀과 공유하되, 영업전략 부분은 수정 못하게 댓글만 허용하고 싶을 때",
     context: "파일 공유 후 원치 않는 수정이 자주 생길 때",
     shortcut: "파일 우클릭 > 공유",
-    image: "images/drive.svg",
+    image: "images/drive-sharing-dialog.png",
+    deptTags: ["총무팀", "IT운영팀"],
   },
   {
     category: "drive",
@@ -104,6 +111,7 @@ const TIPS = [
     context: "문서 위치가 팀마다 들쭉날쭉할 때",
     shortcut: "왼쪽 메뉴 > 공유 드라이브",
     image: "images/drive.svg",
+    deptTags: ["기획팀", "총무팀"],
   },
   {
     category: "drive",
@@ -113,7 +121,8 @@ const TIPS = [
     scenario: "올해 1분기에 연구소에서 만든 안정성 시험 보고서를 찾아야 하는데, '보고서'로 검색하면 수백 개가 나올 때",
     context: "동일한 이름의 파일이 많아 헷갈릴 때",
     shortcut: "type:document / owner:이름 / before:날짜",
-    image: "images/drive.svg",
+    image: "images/drive-search-screenshot.png",
+    deptTags: ["기획팀", "영업팀", "총무팀"],
   },
   {
     category: "drive",
@@ -124,6 +133,7 @@ const TIPS = [
     context: "자주 드나드는 프로젝트 폴더가 많을 때",
     shortcut: "폴더 우클릭 > 색상 변경 / s (별표 토글)",
     image: "images/drive.svg",
+    deptTags: ["기획팀", "총무팀"],
   },
   {
     category: "drive",
@@ -134,6 +144,7 @@ const TIPS = [
     context: "실수로 중요한 내용을 삭제했을 때",
     shortcut: "Ctrl/Cmd + Alt + Shift + H",
     image: "images/drive.svg",
+    deptTags: ["기획팀", "총무팀", "IT운영팀"],
   },
   {
     category: "drive",
@@ -144,6 +155,7 @@ const TIPS = [
     context: "인터넷이 불안정한 환경에서 작업할 때",
     shortcut: "설정 > 오프라인 > 활성화",
     image: "images/drive.svg",
+    deptTags: ["영업팀", "기획팀"],
   },
   {
     category: "drive",
@@ -154,6 +166,7 @@ const TIPS = [
     context: "하나의 파일을 여러 프로젝트에서 참조해야 할 때",
     shortcut: "Shift + Z (바로가기 추가)",
     image: "images/drive.svg",
+    deptTags: ["기획팀", "총무팀"],
   },
   {
     category: "drive",
@@ -164,6 +177,7 @@ const TIPS = [
     context: "Google Workspace 저장공간이 부족할 때",
     shortcut: "Drive > 저장용량 클릭 > 크기순 정렬",
     image: "images/drive.svg",
+    deptTags: ["IT운영팀", "총무팀"],
   },
   {
     category: "drive",
@@ -174,6 +188,7 @@ const TIPS = [
     context: "브라우저 없이 로컬에서 Drive 파일을 작업하고 싶을 때",
     shortcut: "시스템 트레이 > Drive 아이콘 > 설정",
     image: "images/drive.svg",
+    deptTags: ["IT운영팀", "AI센터"],
   },
   {
     category: "drive",
@@ -184,6 +199,7 @@ const TIPS = [
     context: "여러 폴더에 걸친 프로젝트 파일을 한눈에 보고 싶을 때",
     shortcut: "Drive > 우선순위 > 새 작업 공간",
     image: "images/drive.svg",
+    deptTags: ["기획팀", "전략기획팀"],
   },
   {
     category: "drive",
@@ -194,6 +210,7 @@ const TIPS = [
     context: "부서마다 문서 양식이 달라 혼란스러울 때",
     shortcut: "파일 우클릭 > 사본 만들기",
     image: "images/drive.svg",
+    deptTags: ["총무팀", "기획팀"],
   },
   {
     category: "drive",
@@ -204,6 +221,7 @@ const TIPS = [
     context: "외부 파트너에게 임시로 파일을 공유해야 할 때",
     shortcut: "공유 > 설정(톱니바퀴) > 옵션 제한",
     image: "images/drive.svg",
+    deptTags: ["총무팀", "IT운영팀"],
   },
   {
     category: "drive",
@@ -214,6 +232,7 @@ const TIPS = [
     context: "공유한 파일을 누가 확인했는지 알고 싶을 때",
     shortcut: "파일 선택 > 우측 패널 > 활동(i)",
     image: "images/drive.svg",
+    deptTags: ["총무팀", "IT운영팀"],
   },
   {
     category: "drive",
@@ -224,6 +243,7 @@ const TIPS = [
     shortcut: "우클릭 > 연결 앱 / 새로 만들기 > 더보기",
     image: "images/drive.svg",
     scenario: "프로세스 순서도를 그려야 하는데 Docs로는 한계가 있습니다. Drive에서 파일 우클릭 > 연결 앱 > Lucidchart를 선택하면 브라우저에서 바로 다이어그램을 그리고, 결과물이 Drive에 자동 저장됩니다.",
+    deptTags: ["IT운영팀", "디자인팀", "AI센터"],
   },
   {
     category: "drive",
@@ -234,6 +254,7 @@ const TIPS = [
     shortcut: "Drive 홈 > 추천 파일 영역",
     image: "images/drive.svg",
     scenario: "아침에 출근해서 어제 작업하던 스프레드시트를 열려는데 폴더 경로가 기억나지 않습니다. Drive 홈만 열면 빠른 액세스에 어제 편집하던 파일이 바로 나와서, 클릭 한 번으로 이어서 작업할 수 있습니다.",
+    deptTags: ["기획팀", "영업팀"],
   },
 
   // ─── Docs / Sheets / Slides ───
@@ -247,6 +268,7 @@ const TIPS = [
     shortcut: "Ctrl/Cmd + Alt + Shift + A",
     image: "images/docs.svg",
     scenario: "보도자료 초안을 팀장에게 검토 요청했더니 직접 편집해서 원본이 뭐가 바뀌었는지 모릅니다. 제안 모드로 전환해달라고 하면 수정 제안이 색깔로 표시되어, 승인/거부를 하나씩 선택할 수 있습니다.",
+    deptTags: ["기획팀", "마케팅팀"],
   },
   {
     category: "docs",
@@ -257,6 +279,7 @@ const TIPS = [
     shortcut: "Ctrl/Cmd + Alt + 1~6 (제목 레벨)",
     image: "images/docs.svg",
     scenario: "30페이지짜리 정책 문서에서 '보안 정책' 섹션을 찾으려고 스크롤하고 있습니다. 제목 스타일을 적용해뒀다면 좌측 개요 패널에서 '보안 정책'을 클릭만 하면 바로 이동합니다.",
+    deptTags: ["기획팀", "전략기획팀"],
   },
   {
     category: "docs",
@@ -267,6 +290,7 @@ const TIPS = [
     shortcut: "docs.google.com > 템플릿 갤러리",
     image: "images/docs.svg",
     scenario: "매주 금요일 주간보고를 쓸 때마다 표를 새로 그리고 항목을 정리하는 데만 15분씩 걸립니다. 표·체크리스트가 포함된 템플릿을 만들어두면 '사본 만들기' 후 내용만 채워 5분 만에 완성됩니다.",
+    deptTags: ["기획팀", "총무팀"],
   },
   {
     category: "docs",
@@ -277,6 +301,7 @@ const TIPS = [
     shortcut: "Ctrl/Cmd + Shift + S (음성 입력)",
     image: "images/docs.svg",
     scenario: "브레인스토밍 회의 직후 아이디어가 10개나 쏟아져 나왔는데 타이핑하려니 까먹을 것 같습니다. Ctrl+Shift+S로 음성 입력을 켜고 말로 쭉 풀어놓으면, 나중에 정리만 하면 되니까 아이디어 유실이 없습니다.",
+    deptTags: ["기획팀", "마케팅팀", "AI센터"],
   },
   {
     category: "docs",
@@ -287,6 +312,7 @@ const TIPS = [
     shortcut: "파일 > 페이지 설정 > 페이지 없음",
     image: "images/docs.svg",
     scenario: "팀 내부 기술 문서를 Docs로 작성하는데 페이지 경계에서 표가 잘리고 레이아웃이 깨집니다. 파일 > 페이지 설정 > 페이지 없음으로 바꾸면 끊김 없는 스크롤 문서가 되어 웹 문서처럼 편하게 읽힙니다.",
+    deptTags: ["IT운영팀", "AI센터"],
   },
   {
     category: "docs",
@@ -297,6 +323,7 @@ const TIPS = [
     shortcut: "삽입 > 목차",
     image: "images/docs.svg",
     scenario: "20페이지짜리 운영 매뉴얼을 만들었는데 수신자가 '3장 비상연락처가 어디 있어요?'라고 물어봅니다. 삽입 > 목차로 클릭 가능한 목차를 넣어두면, 누구나 원하는 섹션으로 바로 점프할 수 있습니다.",
+    deptTags: ["기획팀", "총무팀"],
   },
   {
     category: "docs",
@@ -307,6 +334,7 @@ const TIPS = [
     shortcut: "도구 > 문서 비교",
     image: "images/docs.svg",
     scenario: "법무팀에서 수정한 계약서가 돌아왔는데 어디가 바뀌었는지 한 줄씩 대조하려면 한 시간이 걸립니다. 도구 > 문서 비교로 원본과 수정본을 넣으면 변경된 부분이 하이라이트되어 5분 만에 검토 끝납니다.",
+    deptTags: ["기획팀", "전략기획팀"],
   },
   {
     category: "docs",
@@ -317,6 +345,7 @@ const TIPS = [
     shortcut: "확장 프로그램 > 부가기능",
     image: "images/docs.svg",
     scenario: "기획 문서에 프로세스 순서도를 넣어야 하는데 Docs 기본 그리기 도구로는 한계가 있습니다. 부가기능에서 Lucidchart를 설치하면 전문적인 다이어그램을 그려서 문서에 바로 삽입할 수 있습니다.",
+    deptTags: ["IT운영팀", "기획팀"],
   },
   {
     category: "docs",
@@ -327,6 +356,7 @@ const TIPS = [
     shortcut: "Ctrl/Cmd + Alt + M (댓글 삽입)",
     image: "images/docs.svg",
     scenario: "기획서에서 '예산 부분 재확인 필요'라는 피드백을 Slack으로 따로 보내면 맥락이 끊깁니다. 해당 문단에 바로 댓글을 달고 @재무팀장을 태그하면, 이메일 알림과 함께 정확한 위치에서 논의가 시작됩니다.",
+    deptTags: ["기획팀", "마케팅팀"],
   },
   {
     category: "docs",
@@ -337,6 +367,7 @@ const TIPS = [
     shortcut: "Ctrl+K / Ctrl+Alt+C → Ctrl+Alt+V",
     image: "images/docs.svg",
     scenario: "보고서에서 제목 서식을 20개 항목에 똑같이 적용해야 합니다. 하나를 꾸민 뒤 Ctrl+Alt+C로 서식 복사, 다음 항목 선택 후 Ctrl+Alt+V로 붙여넣기를 반복하면 일일이 굵기·크기·색상을 맞출 필요 없이 1분 만에 끝납니다.",
+    deptTags: ["기획팀", "마케팅팀", "총무팀"],
   },
   // — Sheets —
   {
@@ -348,6 +379,7 @@ const TIPS = [
     shortcut: "=VLOOKUP() / =INDEX(MATCH())",
     image: "images/docs.svg",
     scenario: "인사팀 시트에는 사번과 이름이, 급여 시트에는 사번과 금액이 있습니다. 급여 시트에서 =INDEX(인사!B:B, MATCH(A2, 인사!A:A, 0))을 쓰면 사번 기준으로 이름이 자동으로 채워져서 수작업 매칭이 필요 없습니다.",
+    deptTags: ["기획팀", "전략기획팀", "영업팀"],
   },
   {
     category: "docs",
@@ -358,6 +390,7 @@ const TIPS = [
     shortcut: "=ARRAYFORMULA(수식범위)",
     image: "images/docs.svg",
     scenario: "매출 시트에 매일 새 행이 추가되는데, 수량×단가 수식을 매번 아래로 드래그하고 있습니다. 첫 셀에 =ARRAYFORMULA(B2:B*C2:C)만 넣으면 새 행이 추가될 때마다 자동으로 계산됩니다.",
+    deptTags: ["전략기획팀", "영업팀"],
   },
   {
     category: "docs",
@@ -368,6 +401,7 @@ const TIPS = [
     shortcut: "=QUERY(범위, \"SELECT ... WHERE ...\")",
     image: "images/docs.svg",
     scenario: "전체 매출 데이터에서 영업부의 이번 분기 실적만 뽑아야 합니다. =QUERY(데이터!A:E, \"SELECT A, SUM(E) WHERE B='영업부' GROUP BY A\")로 피벗 테이블 없이 원하는 보고서를 바로 만들 수 있습니다.",
+    deptTags: ["전략기획팀", "영업팀", "AI센터"],
   },
   {
     category: "docs",
@@ -378,6 +412,7 @@ const TIPS = [
     shortcut: "삽입 > 피벗 테이블",
     image: "images/docs.svg",
     scenario: "3,000건의 주문 데이터에서 지역별·제품별 매출 현황을 임원 보고용으로 정리해야 합니다. 삽입 > 피벗 테이블에서 행에 지역, 열에 제품, 값에 매출 합계를 넣으면 2분 만에 크로스탭 요약표가 완성됩니다.",
+    deptTags: ["기획팀", "전략기획팀", "영업팀"],
   },
   {
     category: "docs",
@@ -388,6 +423,7 @@ const TIPS = [
     shortcut: "서식 > 조건부 서식",
     image: "images/docs.svg",
     scenario: "월별 KPI 시트에서 목표 미달 항목을 하나씩 눈으로 찾고 있습니다. 조건부 서식에서 '값이 100 미만이면 빨간 배경' 규칙을 넣으면, 미달 항목이 빨간색으로 자동 표시되어 한눈에 파악됩니다.",
+    deptTags: ["전략기획팀", "영업팀", "기획팀"],
   },
   {
     category: "docs",
@@ -398,6 +434,7 @@ const TIPS = [
     shortcut: "데이터 > 데이터 유효성 검사",
     image: "images/docs.svg",
     scenario: "공용 재고 시트에 팀원들이 수량을 입력하는데, '10개'나 '약 10' 같은 문자가 섞여서 합계 수식이 깨집니다. 데이터 유효성 검사에서 '숫자만' 조건을 걸면 문자 입력 자체가 차단됩니다.",
+    deptTags: ["IT운영팀", "총무팀"],
   },
   {
     category: "docs",
@@ -408,6 +445,7 @@ const TIPS = [
     shortcut: "데이터 > 이름이 지정된 범위",
     image: "images/docs.svg",
     scenario: "복잡한 예산 시트에서 =SUM(B2:B100)*C5/D10 같은 수식이 있으면 나중에 뭐가 뭔지 모릅니다. 범위에 '월매출', '세율', '할인율'이라고 이름을 붙이면 =SUM(월매출)*세율/할인율로 읽혀서 누구나 이해할 수 있습니다.",
+    deptTags: ["전략기획팀", "기획팀"],
   },
   {
     category: "docs",
@@ -418,6 +456,7 @@ const TIPS = [
     shortcut: "데이터 > 필터 보기 만들기",
     image: "images/docs.svg",
     scenario: "영업팀 5명이 같은 고객 시트를 보는데, 한 명이 필터로 서울 지역만 걸면 다른 사람 화면에서도 서울만 보입니다. 필터 보기를 쓰면 각자 원하는 지역만 필터링하면서 다른 사람 화면은 영향받지 않습니다.",
+    deptTags: ["영업팀", "기획팀"],
   },
   {
     category: "docs",
@@ -428,6 +467,7 @@ const TIPS = [
     shortcut: "=IMPORTRANGE(\"URL\", \"범위\")",
     image: "images/docs.svg",
     scenario: "5개 지역 영업소가 각자 스프레드시트에 매출을 입력하고 있습니다. 본사 종합 시트에서 =IMPORTRANGE로 각 영업소 시트를 연결하면, 영업소가 데이터를 수정할 때마다 종합 대시보드에 실시간 반영됩니다.",
+    deptTags: ["전략기획팀", "영업팀"],
   },
   {
     category: "docs",
@@ -438,6 +478,7 @@ const TIPS = [
     shortcut: "확장 프로그램 > 매크로 > 매크로 녹화",
     image: "images/docs.svg",
     scenario: "매주 월요일 원본 데이터를 복사 → 빈 행 삭제 → 헤더 서식 적용 → 특정 열 숨기기를 반복하고 있습니다. 매크로 녹화를 시작하고 한 번만 수행하면, 다음 주부터는 단축키 한 번으로 전체 과정이 자동 실행됩니다.",
+    deptTags: ["IT운영팀", "전략기획팀"],
   },
   {
     category: "docs",
@@ -448,6 +489,7 @@ const TIPS = [
     shortcut: "=SPARKLINE(데이터범위, {옵션})",
     image: "images/docs.svg",
     scenario: "월별 매출 요약 표에서 숫자만 나열하면 추세가 안 보입니다. 각 행 끝에 =SPARKLINE(B2:M2)를 넣으면 12개월 추이가 미니 그래프로 표시되어, 별도 차트 없이도 어떤 제품이 성장 중인지 바로 보입니다.",
+    deptTags: ["전략기획팀", "영업팀"],
   },
   // — Slides —
   {

@@ -1,0 +1,38 @@
+The website is in this directory. Two updates needed:
+
+1. UPDATE SCREENSHOTS: We have 11 real screenshots in images/ directory. Update script.js so each tip that has a matching screenshot uses it. Map these images to relevant tips:
+   - images/gmail-filters-screenshot.png → Gmail filter tip
+   - images/gmail-labels-screenshot.png → Gmail label tip
+   - images/gmail-search-operators.png → Gmail search tip
+   - images/drive-search-screenshot.png → Drive search tip
+   - images/drive-sharing-dialog.png → Drive sharing tip
+   - images/meet-settings-screenshot.png → Meet settings tip
+   - images/slack-channels-screenshot.jpg → Slack channel tip
+   - images/slack-search-screenshot.png → Slack search tip
+   - images/slack-project-channel.png → Slack channel management tip
+   - images/slack-ai-features.png → Slack workflow/integration tip
+   - images/slack-recap-feature.png → Slack thread/recap tip
+   Tips without a real screenshot should keep the SVG icon.
+
+2. ADD DEPARTMENT-SPECIFIC USE CASES: The company (광동제약) has these departments:
+   - 기획팀 (Planning)
+   - 영업팀 (Sales)
+   - 마케팅팀 (Marketing)
+   - 전략기획팀 (Strategic Planning)
+   - 총무팀 (General Affairs)
+   - IT운영팀 (IT Operations)
+   - AI센터 (AI Center)
+   - 디자인팀 (Design)
+
+   Add a "deptTags" array field to each tip with 1-3 relevant department names.
+   Also add a department filter UI in the sidebar (below category nav) so users can filter tips by department.
+   
+   Examples:
+   - Sheets pivot table tip → deptTags: ["기획팀", "전략기획팀", "영업팀"]
+   - Slack workflow builder → deptTags: ["IT운영팀", "AI센터"]
+   - Drive sharing permissions → deptTags: ["총무팀", "IT운영팀"]
+   - Slides presentation tips → deptTags: ["마케팅팀", "디자인팀", "기획팀"]
+   - Calendar shared calendars → deptTags: ["총무팀", "기획팀"]
+   
+   Make each department tag clickable to filter. Show department tags as small badges on each tip card.
+   All text in Korean. Keep all existing features intact.

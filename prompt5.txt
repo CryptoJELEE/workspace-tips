@@ -1,0 +1,27 @@
+The website has 78 tips but only SVG icons in images/. I need REAL screenshots from official help pages.
+
+Task:
+1. For each of the 6 categories, download 3-5 real screenshots from official Google/Slack help pages using curl.
+2. Target URLs for screenshots:
+   - Gmail: https://support.google.com/mail/ (filters, labels, settings UI)
+   - Drive: https://support.google.com/drive/ (sharing dialog, search, folder views)
+   - Docs/Sheets: https://support.google.com/docs/ (toolbar, formulas, collaboration UI)
+   - Calendar: https://support.google.com/calendar/ (event creation, settings, views)
+   - Meet: https://support.google.com/meet/ (meeting UI, settings)
+   - Slack: https://slack.com/help/ (channel view, shortcuts panel, workflow builder)
+
+3. Use curl to download images. Try these known Google Workspace image URLs:
+   - https://lh3.googleusercontent.com/ based images from support pages
+   - https://storage.googleapis.com/support-kms-prod/ based images
+   - Or fetch the help pages first, extract image URLs, then download them
+
+4. Save all images to images/ directory with descriptive names like:
+   - images/gmail-filters-screenshot.png
+   - images/drive-sharing-dialog.png
+   - images/sheets-pivot-table.png
+   etc.
+
+5. Update script.js to reference these real screenshot images in the tip objects (update the image field)
+6. For tips without a matching screenshot, keep the existing SVG icon
+
+Steps: First fetch a few official help pages, extract image URLs from them, then curl download the actual images.
